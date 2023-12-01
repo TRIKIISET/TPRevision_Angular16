@@ -39,7 +39,8 @@ export class UpdatecarComponent implements OnInit {
         ))
     })
   }
-
+// Pour les accessoires, il est est toujours possible de faire une boucle qui parcout this.voiture.listAccessoires
+ // Et à chaque itération, on fait avec un push au formArray 
   public get ListAccessoires() {
     return this.carForm.get('listAccessoires') as FormArray;
   }
